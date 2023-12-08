@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .header {
+            text-align: center;
+            height: auto;
+
+        }
+        .menu {
+            width: 200px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            float: left;
+        }
+        .content {
+
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .baner {
+            float: right;
+            width: 200px;
+            height: 300px;
+            background-color: blanchedalmond;
+        }
+        .footer {
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            clear: both;
+        }
+        .wrap{
+            background-color: rgb(255, 255, 255);
+        }
+        .clear {
+            clear: both;
+        }
+        #list {
+         width: 300px; 
+        }
+       </style>
+           <style>
+            #list2 {
+             width: 540px; 
+            }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Индивидуальное задание 3</h1></div>
+        <div class="wrap"> 
+            <div class="menu">
+                <a href="#" onclick="history.back();">На главную</a>
+            </div>
+            <div class="baner"><a href="https://www.valvesoftware.com/ru/"><img src="image.png" height="500" width="250"></a></div>
+            <div class="content">    <table  border="1" height="200">
+                <form id="add_form1" name="userdate" method="get" action="form.php">
+                <tr align="center">
+                    <td width="500">
+                      Вопрос 1
+                    </td>
+                        <td width="166">       
+                            <input name="text[]" type="text" required>   
+                        </td>
+                        <td width="166">
+                            <input name="text[]" type="text" required>
+                        </td>
+                        <td width="166">
+                            <input name="text[]" type="text" required>
+                        </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Вопрос 2
+                    </td>
+                    <td colspan="3" align="left" >
+                        <select name="list" id="list">
+                            <option  value="1" selected>Ответ 2.1</option>
+                            <option  value="2" >Ответ 2.2</option>
+                            <option  value="3" >Ответ 2.3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Вопрос 3
+                    </td>
+                    <td>
+                       <label>
+                        <input type="checkbox" name="value" id="chbox1" > Ответ 2.1
+                       </label> 
+                    </td>
+                    <td>
+                        <label>
+                         <input type="checkbox" name="value" id="chbox1" > Ответ 2.2
+                        </label> 
+                     </td>
+                     <td>
+                        <label>
+                         <input type="checkbox" name="value" id="chbox1" > Ответ 2.3
+                        </label> 
+                     </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Вопрос 4
+                    </td>
+                    <td colspan="3">
+                        <input size="70" name="text[]" type="text" required >
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Вопрос 5
+                    </td>
+                    <td>
+                        <input type="radio" id="pivo1" name="pivo" value="Otvet51" />
+                        <label for="pivo1">Ответ 5.1</label>
+                    <td>
+                        <input type="radio" id="pivo2" name="pivo" value="Otvet52" />
+                        <label for="pivo2">Ответ 5.2</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="pivo3" name="pivo" value="Otvet53" />
+                        <label for="pivo3">Ответ 5.3</label>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        Вопрос 6
+                    </td>
+                    <td colspan="3">
+                        <input type="file" name="farsh" />
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="center">
+                        Вопрос 7
+                    </td>
+                    <td>
+                            Ответ 7.1<br>
+                            Ответ 7.2<br>
+                            Ответ 7.3<br>
+                            Ответ 7.4
+                    </td>
+                </tr>
+                <tr  align="center" valign="middle">
+                    <td>
+                        Дополнительная<br>
+                        информация
+                    </td>
+                    <td colspan="3" >
+                        <select size="10" name="list2" id="list2">
+                        </select>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td colspan="4">
+                        <input type="submit" value="send">
+                        <input type="reset" value="reset">
+                        <button>
+                        <img src="dead-space-remake-2023-isaac-cla.jpg" alt="" style="vertical-align:middle"> 
+                        Кнопка с рисунком
+                        </button>
+                    </td>
+                </tr>
+            </form>
+            </table>
+            <div class="clear"></div>
+        </div>
+    <div class="footer" align="center">
+        by <br>
+        ©Куделко Алексей
+    </div>
+</body>
+</html>

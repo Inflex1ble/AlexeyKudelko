@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>z[jxee,bnmct,z</title>
+    </head>
+    <body>
+        <FORM id="my_form" name="user_data" method="post|get" action="form.php" > 
+            <теги, формирующие элементы управления> 
+            </FORM>
+            <FIELDSET> 
+                <LEGEND>текст заголовка</LEGEND> 
+                <элементы управления, объединяемые в группу> 
+                </FIELDSET>
+                <LABEL 
+FOR=“id элемента управления, к которому относится надпись"
+> текст надписи: </LABEL>
+
+<элемент управления id=“id элемента управления, к которому относится надпись”><br> 
+<LABEL>
+    Check: <INPUT TYPE=“checkbox" NAME=“box" >
+    </LABEL>
+    
+    
+    
+    <LABEL FOR="passwd">Пароль:</LABEL> 
+    <INPUT TYPE="password" ID="passwd" NAME="password" SIZE="25">
+     <HR>
+    <INPUT TYPE="password" ID="passwd" NAME="password" SIZE="25">
+    <LABEL FOR="passwd"> - пароль</LABEL><br>
+    <INPUT TYPE="text" NAME="<название переменной>" VALUE="<изначальное значение>" MAXLENGTH="<максимальное количество символов>" DISABLED READONLY TABINDEX="<номер в порядке обхода>" AUTOFOCUS><br>
+        <label for=“login”>Имя: </label>
+<INPUT TYPE="text" ID="login" NAME="login" AUTOFOCUS>
+<label for=“pass”> Пароль: </label>
+<INPUT TYPE="password" ID="pass" NAME="password" ><br>
+    <label>  
+        <input type="checkbox" name=“val_1" id="chbox1" checked>  1
+        </label>
+        <label> 
+        <input type="checkbox" name="val_2" id="chbox2"> 2
+        </label><br>
+        <label>
+            <input type="checkbox" name="hobby[]"> check1
+       </label><br>
+       <label>
+            <input type="checkbox" name="hobby[]"> check2
+       </label><br>
+       <label>
+             <input type="checkbox" name="hobby[]"> check3
+       </label><br>
+       <label>
+        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> 1
+        </label>
+        <label>
+        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> 2
+        </label><br>
+        <input type="email" name=“email” placeholder="это обязательное поле" required> <br>
+
+ <input type="text" name="text" autocomplete="off"> <br>
+ <input type="submit" value="Отправить">
+<input type="reset" value="Сбросить">
+<input type="image" src="email.gif">
+<input type="button" value="Кнопка"><br>
+<button type='submit'>
+    <b>Submit</b><br>
+    <img src='email.jpg'>
+</button><br>
+<input type="file" name="file_Field" dir="ltr"><br>
+<textarea name="text_area" lang="ru">
+    Текст по умолчанию
+    </textarea><br>
+    <select name="list" id="list">
+        <option value="1">Минск</option>
+        <option value="2">Брест</option>
+        <option value="0" selected>Город</option>
+        </select><br>
+        <select name="list[]" size="3" multiple id="list">
+            <option value="1">Минск</option>
+            <option value="2" disabled>Брест</option>
+            <option value="0" selected>Город</option>
+          </select><br>
+          <select name="list" id="list"><br>
+            <optgroup label="Города РБ">
+                  <option value="1">Брест</option>
+                  <option value="2">Минск</option>
+                  <option value="3">Витебск</option>
+            </optgroup>
+            <optgroup label="Города России">
+                  <option value="4">Москва</option>
+                  <option value="5">Рязань</option>
+                  <option value="6">Магадан</option>
+            </optgroup>
+            </select><br>
+            <input type="email" placeholder="введите адрес почты"> <br>
+<input type="url" placeholder="введите адрес сайта"> <br>
+<input type="date" placeholder="выберите дату"> <br>
+<input type="time" placeholder="введите время"> <br>
+<input type="number" min="0" max="100" step="10"> <br>
+<input type="range" min="1" max="10"> <br>
+<label for ="index_1" >Индекс:</label>
+ <INPUT TYPE="text" ID="index_1" NAME="index_1" pattern="[0-9]{6,10}"> <small>(от 6 до 10) цифр</small><br>
+<label for ="index_2" >Индекс:</label>
+<INPUT TYPE="text" ID="index_2" NAME="index_2" pattern="^[A-Z].*"> <small>(Начинаться должно только с заглавной буквы)</small><br>
+<input type="text" placeholder="Введите текст">
+<input type="file" name="file_Field[]" id="file_Field" multiple>
+<input type=“email” name=“email[]” id=“email” multiple>
+    </body>
+</html>

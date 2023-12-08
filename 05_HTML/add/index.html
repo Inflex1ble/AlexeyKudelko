@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .header {
+            text-align: center;
+            height: auto;
+
+        }
+        .menu {
+            width: 200px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            float: left;
+        }
+        .content {
+
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .baner {
+            float: right;
+            width: 200px;
+            height: 300px;
+            background-color: blanchedalmond;
+        }
+        .footer {
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            clear: both;
+        }
+        .wrap{
+            background-color: rgb(255, 255, 255);
+        }
+        .clear {
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Простая форма поиска с вариантами</h1></div>
+        <div class="wrap"> 
+            <div class="menu">
+                <a href="#" onclick="history.back();">На главную</a>
+            </div>
+            <div class="baner"><a href="https://www.valvesoftware.com/ru/"><img src="image.png" height="500" width="250"></a></div>
+            <div class="content"><table width="700">
+                <tr>
+                    <th>Простая форма поиска с вариантами:</th>
+                    <th>Простая форма поиска с вариантами:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form1" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Строка поиска</legend>
+                                <input type="text" name="poisk" pattern="{1,10}"> <input type="button" value="Искать"><br>
+                                <label>
+                                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> На сайте
+                                    </label>
+                                    <label>
+                                    <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> В Google
+                                    </label><br>
+                                    <i>Длина запроса не более 10 символов</i>                                
+                            </fieldset>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add_form2" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Строка поиска</legend>
+                                <input type="text" name="poisk" required autofocus> <input type="button" value="Искать"><br>
+                                <label>
+                                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> На сайте
+                                    </label>
+                                    <label>
+                                    <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> В Google
+                                    </label><br>
+                                    <i>* - обязательное поле</i><br>
+                                    <i>Автофокус в поле поиска</i>
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Простая форма авторизации:</th>
+                    <th>Опрос(голосование)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form3" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Авторизуйтесь</legend>
+                                <input type="text" name="login" required> *Логин<br>
+                                <input type="password" name="password" required> *Пароль<br>
+                                <label>
+                                    <input type="checkbox" name="ostvsis"> Оставаться в системе
+                                </label><br>
+                                <input type="button" value="Войти">
+                                <i>* - обязательное поле</i>
+                            </fieldset>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add_form4" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Как вам?</legend>
+                                <label>
+                                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> ничего
+                                    </label><br>
+                                    <label>
+                                    <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> неплохо
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0"> хорошо
+                                        </label><br>
+                                        <label>
+                                        <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0"> супер
+                                        </label><br>
+                                        <input type="hidden" name="date_voite", value="2013.12.31"><br>
+                                <input type="button" value="Отправить"><br>
+                                <i>Есть скрытое поле</i><br>
+                                <i>name=date_voite, value="2013.12.31"</i>
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Отзыв:</th>
+                    <th>Выпадающий и мульти списки:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form5" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Оставьте ваш отзыв</legend>
+                                <input type="text" name="name" required> * Имя<br>
+                                <input type="email" name="email" required> * e-mail<br>
+                                <textarea name="forma" lang="ru">Форма отправки</textarea><br>
+                                <input type="button" value="Отправить"><br>
+                                <i>* - обязательное поле</i><br>
+                                <i>поле email - с проверкой метод POST</i>
+                            </fieldset>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add_form6" name="userdata" method="post|get" action="form.php">
+                            <fieldset>
+                                <legend>Города РБ</legend>
+                                <select name="list" id="list">
+                                    <option value="1" selected>Брест</option>
+                                </select>
+                                <select name="list" id="list" size="8"><br>
+                                    <optgroup label="Города РБ">
+                                          <option value="1">Брест</option>
+                                          <option value="2">Минск</option>
+                                          <option value="3">Витебск</option>
+                                    </optgroup>
+                                    <optgroup label="Города России">
+                                          <option value="4">Москва</option>
+                                          <option value="5">Рязань</option>
+                                          <option value="6">Магадан</option>
+                                    </optgroup>
+                                    </select>
+                                    <input type="button" value="Ок">                                                                
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Загрузка файла на сервер:</th>
+                    <th>Валидация данных HTML5:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form7" name="userdata" method="post|get" action="form.php" enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Upload</legend>
+                                Файл:<br>
+                                <input type="file" name="file_Field" dir=“ltr”><br>
+                                Срок хранения(года):
+                                <input type="text" name="srok"> <input type="button" value="загрузить">
+                                <i>Метод POST</i><br>
+                                <i>В теге form используйте атрибут enctype="multipart/form-data" для отправки файла на сервер</i>
+                            </fieldset>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add_form8" name="userdata" method="post|get" action="form.php" enctype="multipart/form-data">
+                            <fieldset>
+                                <legend>Строка поиска</legend>
+                                <input type="text" name="text[]" pattern="[А-Яа-я]" placeholder="Только русские буквы"><br>
+                                <i>Телефонный номер в формате +XXX-XX-XXXXXXX, где X - любые числа</i>
+                                <input type="tel" name="mobila" placeholder="+375-29-1234567"><br>
+                                <input type="button" value="Проверить">
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <div class="clear"></div>
+        </div>
+    <div class="footer" align="center">
+        by <br>
+        ©Куделко Алексей
+    </div>
+</body>
+</html>
